@@ -1,20 +1,21 @@
 class Employee {
-   void display(){
-      System.out.println("Name of class is Employee");
-   }
+    void display() {
+        System.out.println("Name of class is Employee");
+    }
 }
 
 class Engineer extends Employee {
-    void display(){
-      System.out.println("Name of class is Employee");
-      super.display;
-   }
-   
+
+    @Override
+    void display() {
+        System.out.println("Name of class is Engineer");
+        super.display();
+    }
 }
 
 public class MethodOverriding {
-   public static void main(String args[]){
-      Engineer obj = new Engineer();
-      obj.display;
-   }
+    public static void main(String[] args) {
+        Engineer e = new Engineer();
+        e.display();
+    }
 }
