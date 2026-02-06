@@ -13,9 +13,8 @@ class Engineer extends Employee {
 }
 
 public class MethodOverriding {
-   Engineer obj = new Engineer();
-   obj.display;
-        // TODO: Create an Engineer object
-        // TODO: Call the display() method
-    
+   public static void main(String args[]){
+      Engineer obj = new Engineer();
+      obj.display;
+   }
 }
